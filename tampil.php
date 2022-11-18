@@ -17,9 +17,9 @@
             ?>
             <tr>
                 <td> <?= $i ?> </td>
-                <td> <?= $data["NIM"] ?> </td>
-                <td> <?= $data["Nama"] ?> </td>
-                <td> <?= $data["Prodi"] ?> </td>
+                <td> <?= $data["nim"] ?> </td>
+                <td> <?= $data["nama"] ?> </td>
+                <td> <?= $data["prodi"] ?> </td>
                 
             </tr>
     <?php
