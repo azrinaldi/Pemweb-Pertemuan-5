@@ -39,16 +39,16 @@ CREATE TABLE `data_mahasiswa` (
 --
 
 INSERT INTO `data_mahasiswa` (`no`, `nim`, `nama`, `prodi`) VALUES
-(1, '120140127', 'Dicko Azrinaldi', 'Teknik Informatika'),
-(2, '120140111', 'Budiyono', 'Teknik Informatika'),
-(3, '120140033', 'Putra Siregar', 'Teknik Informatika'),
-(4, '120150222', 'Hafizh Nurma', 'Teknik Geologi'),
-(5, '120150099', 'Rahmat Abigel', 'Teknik Geologi'),
-(6, '120120011', 'Annisa Putri', 'Teknik Geofisika'),
-(7, '120120120', 'Udin Petot', 'Teknik Geofisika'),
-(8, '120170003', 'Ferdy Sambo', 'Teknik Mesin'),
-(9, '120170102', 'Cahaya Nur Hikari', 'Teknik Mesin'),
-(10, '120130067', 'Agung Resistor', 'Teknik Elektro');
+(1, '120140127', 'Dicko Azrinaldi', 'IF'),
+(2, '120140111', 'Budiyono', 'IF'),
+(3, '120140033', 'Putra Siregar', 'IF'),
+(4, '120150222', 'Hafizh Nurma', 'GL'),
+(5, '120150099', 'Rahmat Abigel', 'GL'),
+(6, '120120011', 'Annisa Putri', 'TG'),
+(7, '120120120', 'Udin Petot', 'TG'),
+(8, '120170003', 'Ferdy Sambo', 'MS'),
+(9, '120170102', 'Cahaya Nur Hikari', 'MS'),
+(10, '120130067', 'Agung Resistor', 'EL');
 
 --
 -- Indexes for dumped tables

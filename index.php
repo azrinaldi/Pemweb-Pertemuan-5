@@ -11,11 +11,11 @@
         <label for="">Prodi</label>
         <select name="prodi" id="prodi"  >
             <option value="">Program Studi</option>
-            <option value="Teknik Informatika">Teknik Informatika</option>
-            <option value="Teknik Elektro">Teknik Elektro</option>
-            <option value="Teknik Mesin">Teknik Mesin</option>
-            <option value="Teknik Geofisika">Teknik Geofisika</option>
-            <option value="Teknik Geologi">Teknik Geologi</option>
+            <option value="IF">Teknik Informatika</option>
+            <option value="EL">Teknik Elektro</option>
+            <option value="MS">Teknik Mesin</option>
+            <option value="TG">Teknik Geofisika</option>
+            <option value="GL">Teknik Geologi</option>
           </select>
         <div id="tampil_data">
             <table border=1>
