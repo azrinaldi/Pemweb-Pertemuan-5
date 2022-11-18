@@ -1,26 +1,28 @@
 <table border="1">
-    <tr>
-        <th> No. </th>
-        <th> NIM </th>
-        <th> Nama </th>
-        <th> Program Studi </th>
-    </tr>
+        <tr>
+            <th> No  </th>
+            <th> NIM </th>
+            <th> Nama </th>
+            <th> Program Studi </th>`   
+        </tr>
+    <?php
 
-    <?php
         include "koneksi.php";
-        $query = "SELECT * FROM data_mahasiswa WHERE prodi='".$_GET['prodi']."'";
-	    $result = mysqli_query($connection, $query);
-	    $i = 0;
-	    while ($data = mysqli_fetch_array($result)) :
-	    $i++;
-    ?>
-    <tr>
-        <td> <?= $i ?> </td>
-        <td> <?= $data["nim"] ?> </td>
-        <td> <?= $data["nama"] ?> </td>
-        <td> <?= $data["prodi"] ?> </td>
-    </tr>
+        $prodi = ($_POST['prodi']);
+        $query = "SELECT * FROM data_mahasiswa WHERE Prodi = '$prodi' ";
+        $result = mysqli_query($connection, $query);
+        $i = 0;
+        while ($data = mysqli_fetch_array($result)) :
+            $i++;
+            ?>
+            <tr>
+                <td> <?= $i ?> </td>
+                <td> <?= $data["NIM"] ?> </td>
+                <td> <?= $data["Nama"] ?> </td>
+                <td> <?= $data["Prodi"] ?> </td>
+                
+            </tr>
     <?php
-        endwhile
-    ?>
+endwhile
+?>
 </table>
