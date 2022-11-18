@@ -9,7 +9,7 @@
 <body>
     <div class="content">
         <label for="">Prodi</label>
-        <select name="prodi" id="prodi"  >
+        <select name="prodi" id="prodi">
             <option value="">Program Studi</option>
             <option value="IF">Teknik Informatika</option>
             <option value="EL">Teknik Elektro</option>
@@ -27,12 +27,9 @@
                 </tr>
             </table>
         </div>
-                
-        
-        
     </div>
-<div class="data"></div>
-    
+
+<div class="data"></div>  
     <script 
         src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
@@ -43,20 +40,17 @@
         $(document).ready(function(){
             $('#prodi').change(function(){
                 var variable = $( "#prodi" ).val();
-                $.ajax
-                    ({ 
-                        url: 'tampil.php',
-                        data: { prodi : variable},
-                        type: 'POST',
-                        success: function(data)
-                        {
-                            $("#tampil_data").empty();
-                            $("#tampil_data").append(data);
-                        }
-                    });
+                $.ajax({ 
+                    url: 'tampil.php',
+                    data: { prodi : variable},
+                    type: 'POST',
+                    success: function(data){
+                        $("#tampil_data").empty();
+                        $("#tampil_data").append(data);
+                    }
+                });
             });
-    });
+        });
     </script>
-
 </body>
 </html>
