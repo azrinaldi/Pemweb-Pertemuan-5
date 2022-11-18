@@ -2,7 +2,7 @@
     $host       = "localhost";
     $user       = "root";
     $password   = "";
-    $dbName     = "data_mahasiswa";
+    $dbName     = "belajar_sql";
 
     $connection = mysqli_connect($host, $user, $password, $dbName);
 
