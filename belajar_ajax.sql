@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2022 at 04:02 PM
+-- Generation Time: Nov 18, 2022 at 05:08 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `data_mahasiswa` (
   `no` int(11) NOT NULL,
-  `nim` varchar(9) CHARACTER SET utf8 NOT NULL,
-  `nama` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `nim` varchar(9) NOT NULL,
+  `nama` varchar(50) NOT NULL,
   `prodi` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -46,8 +46,8 @@ INSERT INTO `data_mahasiswa` (`no`, `nim`, `nama`, `prodi`) VALUES
 (5, '120150099', 'Rahmat Abigel', 'Teknik Geologi'),
 (6, '120120011', 'Annisa Putri', 'Teknik Geofisika'),
 (7, '120120120', 'Udin Petot', 'Teknik Geofisika'),
-(8, '1201700003', 'Ferdy Sambo', 'Teknik Mesin'),
-(9, '1201700102', 'Cahaya Nur Hikari', 'Teknik Mesin'),
+(8, '120170003', 'Ferdy Sambo', 'Teknik Mesin'),
+(9, '120170102', 'Cahaya Nur Hikari', 'Teknik Mesin'),
 (10, '120130067', 'Agung Resistor', 'Teknik Elektro');
 
 --
